@@ -20,7 +20,9 @@ class Hexagon {
     translate(pos.x, pos.y);
     rotate(angle);
     ellipseMode(RADIUS);
-    fill(255);
+    strokeWeight(3);
+    stroke(255,10,10);
+    fill(155);
     ellipse(0,0,this.radius,this.radius);
     pop();
   }

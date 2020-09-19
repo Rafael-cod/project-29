@@ -20,7 +20,9 @@ class Box {
     push();
     translate(pos.x, pos.y);
     rectMode(CENTER);
-    fill("white");
+    strokeWeight(4);
+    stroke(100,200,100);
+    fill(100,100,200);
     rect(0,0,this.width,this.height);
     pop();
   }

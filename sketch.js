@@ -4,7 +4,7 @@ const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 const Constraint = Matter.Constraint;
 
-var paper, ground1, ground2;
+var paper, ground1, ground2, ground3;
 var hexagon, sling;
 var box1,box2,box3,box4,box5,box6,box7;
 var box8,box9,box10,box11,box12;
@@ -22,13 +22,14 @@ function setup() {
 	world = engine.world;
 
 	//Create the Bodies Here.
-	ground1 = new Ground(390,305,225,15);
 
 	hexagon = new Hexagon(50,200);
 	
 	sling = new Slingshot(hexagon.body,{x:100, y:200});
 
-	ground2 = new Ground(690,205,165,15);
+	ground1 = new Ground(390,305,225,15);
+  ground2 = new Ground(690,205,165,15);
+  ground3 = new Ground(500,600,1000,15);
 
 	box1 = new Box(300,275,30,40);
 	box2 = new Box(330,275,30,40);
@@ -76,6 +77,7 @@ function draw() {
  
   ground1.display();
   ground2.display();
+  ground3.display();
   hexagon.display();
   sling.display();
   box1.display();
