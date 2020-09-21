@@ -16,7 +16,7 @@ var box25;
 
 
 function setup() {
-	createCanvas(1000, 600);
+  createCanvas(1000, 600);
 
 	engine = Engine.create();
 	world = engine.world;
@@ -31,6 +31,7 @@ function setup() {
   ground2 = new Ground(690,205,165,15);
   ground3 = new Ground(500,600,1000,15);
 
+  
 	box1 = new Box(300,275,30,40);
 	box2 = new Box(330,275,30,40);
 	box3 = new Box(360,275,30,40);
@@ -73,6 +74,11 @@ function draw() {
   background(100);
   //Engine.update(engine);
 
+  noStroke();
+  textSize(20)
+  fill("white")
+  text("Drag the hexagonal stone and release it, to launch it towards the blocks",100, 50)
+
   drawSprites();
  
   ground1.display();
@@ -80,6 +86,7 @@ function draw() {
   ground3.display();
   hexagon.display();
   sling.display();
+  fill("red");
   box1.display();
   box2.display();
   box3.display();
@@ -87,23 +94,29 @@ function draw() {
   box5.display();
   box6.display();
   box7.display();
+  fill("yellow");
   box8.display();
   box9.display();
   box10.display();
   box11.display();
   box12.display();
+  fill("pink");
   box13.display();
   box14.display();
   box15.display();
+  fill("blue");
   box16.display();
+  fill("green")
   box17.display();
   box18.display();
   box19.display();
   box20.display();
   box21.display();
+  fill("blue")
   box22.display();
   box23.display();
   box24.display();
+  fill("red")
   box25.display();
 
 }
